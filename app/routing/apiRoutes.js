@@ -6,7 +6,6 @@ module.exports = function(app) {
 var express = require('express');
 var bodyParser = require('body-parser');
 
-
     app.get('/api/:waitingList?', function (req, res) {
 
         res.sendFile(path.join(__dirname + '/app/data/waitingList.js'));

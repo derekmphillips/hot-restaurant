@@ -1,10 +1,3 @@
-// ===============================================================================
-// DATA
-// Below data will hold all of the waitlist tables.
-// Initially we just set it equal to a "dummy" customer.
-// But you could have it be an empty array as well.
-// ===============================================================================
-
 var waitingArray = [
 	{
 		name: "John Table",
@@ -12,10 +5,11 @@ var waitingArray = [
 		email: "email@email.com",
 		unique: "johntable1"
 	}
+<<<<<<< HEAD
 	// objects representing customers on the waiting list go here
 	// you may want to start with some hard-coded for testing
+=======
+>>>>>>> 31af0b57bd7c8ddd33c16bc3a6c1597d6a3a6e7f
 ];
 
-
-// Note how we export the array. This makes it accessible to other files using require.
 module.exports = waitingArray;
