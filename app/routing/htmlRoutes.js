@@ -10,46 +10,20 @@ module.exports = function(app) {
   // In each of the below cases the user is shown an HTML page of content
   // ---------------------------------------------------------------------------
 
-  // Add some routes to get the three HTML files
-
-   // app.get('/api/:tableData?', function (req, res) {
-
-   //      res.sendFile(path.join(__dirname + '/app/data/tableData.js'));
-
-   //      var customers = req.params.tableData;
-
-   //      if (customers) {
-   //          console.log(customers);
-
-   //          for (var i = 0; i < tableData.length; i++) {
-
-   //              if (customers == tableData[i].routeName) {
-   //                  res.json(tableData[i]);
-   //                  return;
-   //              }
-   //          }
-
-   //          res.json(false);
-   //      }
-
-   //      else {
-   //          res.json(tableData);
-   //      }
-   //  });
+  // Add some routes to get the three HTML files  
 
 app.get('/', function(req, res){	
-	// res.sendFile(path.join(__routing + '/home.html'));
-	// res.send("Welcome to the Page!");
 	res.sendFile(path.join(__dirname, '/../public/home.html'));
-})
+});
 
-// app.get('/add', function(req, res){	
-// // 	res.sendFile(path.join(__routing+ '/reserve.html'));
-// res.sendFile(path.join(__dirname, '/../public/reserve.html'));
-// })
+// app.get('/tables', function(req, res){	
+// 	res.sendFile(path.join(__dirname, '/../public/tables.html'));
+// });
 
-// app.get('/add', function(req, res){	
-// 	res.sendFile(path.join(__routing + '/tables.html'));
-// })
-};
+// app.get('/reserve', function(req, res){	
+// 	res.sendFile(path.join(__dirname, '/../public/reserve.html'));
+// });
+
+// app.use function(req, res){
+// };
 

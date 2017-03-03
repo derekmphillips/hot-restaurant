@@ -3,32 +3,17 @@ var path = require('path');
 
 module.exports = function(app) {
 
-var express = require('express');
-var bodyParser = require('body-parser');
+// app.get('/api/make-a-reservation', function (req, res) {
+//     res.json(tableData) 
+// });
 
-    app.get('/api/:waitingList?', function (req, res) {
+app.get('/api/waitlist', function (req, res) {
+    res.json(waitListData) 
+});
 
-        res.sendFile(path.join(__dirname + '/app/data/waitingList.js'));
+app.post('/api/tables', function (req, res) {
 
-        var wait = req.params.waitData;
+if (tableData.length<5) {
+    tableData.push()
+}
 
-        if (wait) {
-            console.log(wait);
-
-            for (var i = 0; i < waitData.length; i++) {
-
-                if (customers == waitData[i].routeName) {
-                    res.json(waitData[i]);
-                    return;
-                }
-            }
-
-            res.json(false);
-        }
-
-        else {
-            res.json(waitData);
-        }
-    })
-
-};
