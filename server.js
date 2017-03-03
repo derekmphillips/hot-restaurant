@@ -37,9 +37,9 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
-app.get("/", function(req, res) {
-  res.send("Welcome to the Page!");
-});
+// app.get("/", function(req, res) {
+//   res.send("Welcome to the Page!");
+// });
 
 // app.get('/', function(req, res){
 //     res.sendFile(path.join(__dirname + '/app/public/home.html'));

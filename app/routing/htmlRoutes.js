@@ -39,15 +39,17 @@ module.exports = function(app) {
 
 app.get('/', function(req, res){	
 	// res.sendFile(path.join(__routing + '/home.html'));
-	res.send("Welcome to the Page!");
+	// res.send("Welcome to the Page!");
+	res.sendFile(path.join(__dirname, '/../public/home.html'));
 })
 
-app.get('/add', function(req, res){	
-	res.sendFile(path.join(__routing+ '/reserve.html'));
-})
+// app.get('/add', function(req, res){	
+// // 	res.sendFile(path.join(__routing+ '/reserve.html'));
+// res.sendFile(path.join(__dirname, '/../public/reserve.html'));
+// })
 
-app.get('/add', function(req, res){	
-	res.sendFile(path.join(__routing + '/tables.html'));
-})
+// app.get('/add', function(req, res){	
+// 	res.sendFile(path.join(__routing + '/tables.html'));
+// })
 };
 
